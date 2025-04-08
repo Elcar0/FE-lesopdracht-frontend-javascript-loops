@@ -1,3 +1,7 @@
+export function splitter() {
+    console.log('==========================================');
+}
+
 // ==========================================
 // Opdracht 1. Maak een for loop die het volgende patroon in de terminal print:
 // Verwachte uitkomsten:
@@ -9,9 +13,13 @@
 
 // Tip: je kunt de .repeat() methode gebruiken om een karakter een n aantal keer te herhalen... Dit heb je nog niet geleerd, maar bekijk hiervoor dit MDN-artikel eens: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/repeat
 // ==========================================
-export function splitter() {
-    console.log('==========================================');
+let star='';
+for (let i = 0; i<5; i++){
+    star+='*';
+    console.log(star);
 }
+
+splitter();
 
 // ==========================================
 // Opdracht 2. Maak een for-loop die 4 keer het woord "loop..." logt, en bij de laatste (vijfde) loop het woord "klaar!"
@@ -22,11 +30,15 @@ export function splitter() {
 // loop...
 // klaar!
 // ==========================================
+
+//Opdracht 2 met repeat() functie
 const loopText1 = 'loop...';
 const loopText2 = loopText1 + '\n';
 console.log(`${loopText2.repeat(4)}klaar!`);
 
 splitter();
+
+//Opdracht 2 met for loop
 for (let i = 0; i < 4; i++) {
     console.log(loopText1);
 }
