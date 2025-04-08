@@ -110,21 +110,26 @@ const scores = [
     {name: 'Otis', score: 100, salaryIncrease: null},
 ];
 
-for (let i = 0; i < scores.length; i++) {
-    let score = scores[i].score;
+
+// Code voor opdracht 4a en 4b in een functie gezet omdat ze exact dezelfde code zouden gebruiken.
+function salaryRaise(score){
+    let salaryIncrease=0;
 
     if (score >= 60 && score < 70) {
-        scores[i].salaryIncrease = 2;
+        salaryIncrease = 2;
     } else if (score >= 70 && score < 90) {
-        scores[i].salaryIncrease = 3;
+        salaryIncrease = 3;
     } else if (score >= 90 && score < 100) {
-        scores[i].salaryIncrease = 4;
+        salaryIncrease = 4;
     } else if (score === 100) {
-        scores[i].salaryIncrease = 6;
-    } else {
-        scores[i].salaryIncrease = 0;
+        salaryIncrease = 6;
     }
-    console.log(`${scores[i].salaryIncrease}%`)
+    return salaryIncrease;
+}
+
+// 4a for-loop
+for (let i = 0; i < scores.length; i++) {
+    console.log(`${salaryRaise(scores[i].score)}%`)
 }
 
 splitter();
@@ -143,7 +148,15 @@ splitter();
 // ];
 // ==========================================
 
+// 4b for-loop
+console.log(scores);
 
+for (let i = 0; i < scores.length; i++) {
+    scores[i].salaryIncrease=`${salaryRaise(scores[i].score)}%`;
+}
+console.log(scores);
+
+splitter();
 // ==========================================
 // Opdracht 5. Bob wil ervoor zorgen dat al zijn medewerkers een correct bedrijfs-e-mailadres hebben. Deze e-mailadressen moeten
 // automatisch worden gegenereerd ("Nee Bob, NIET met de hand!!") in het format: voornaam.achternaam@loop-it-solutions.nl
@@ -168,6 +181,7 @@ const employees = [
     {firstName: 'Nina', lastName: 'Berg'},
     {firstName: 'Otis', lastName: 'Kuiper'},
 ];
+
 
 // ==========================================
 // Opdracht 6 (BONUS). Bob wil dat alle e-mailadressen in kleine letters worden opgeslagen, zodat ze consistent zijn.
