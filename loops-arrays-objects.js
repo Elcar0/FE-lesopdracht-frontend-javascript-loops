@@ -1,3 +1,7 @@
+import {splitter} from "./loops.js";
+
+console.log('=== O P D R A C H T   L O O P S - A R R A Y S - O B J E C T S . J S ===');
+splitter();
 // ==========================================
 // Opdracht 1. Het sturen van salaris-mailtjes is voor Bob een tijdrovende klus. Bovendien typt hij met twee vingers,
 // dus tegen de tijd dat hij alle mails verstuurd heeft, zijn al zijn collega's al langs zijn bureau gelopen om te vragen
@@ -23,6 +27,11 @@ const salaryDetails = [
 	{name: 'Otis', salary: 2800}
 ];
 
+for (let i = 0; i<salaryDetails.length;i++){
+	console.log(`'Beste ${salaryDetails[i].name}, je salaris van €${salaryDetails[i].salary},- is zojuist overgemaakt. Val me nu alsjeblieft niet meer lastig.'`);
+}
+
+splitter();
 // ==========================================
 // Opdracht 2. Wanneer iemand een verlof-aanvraag doet, moet Bob eerst uit zijn hoofd uitrekenen of deze medewerker nog
 // voldoende vrije dagen over heeft voor de aanvraag. En dat gaat nog wel eens mis... Zorg ervoor dat het aantal vakantiedagen

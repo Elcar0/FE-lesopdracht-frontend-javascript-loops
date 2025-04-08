@@ -2,6 +2,8 @@ export function splitter() {
     console.log('==========================================');
 }
 
+console.log('=== O P D R A C H T   L O O P S . J S ===');
+splitter();
 // ==========================================
 // Opdracht 1. Maak een for loop die het volgende patroon in de terminal print:
 // Verwachte uitkomsten:
@@ -13,9 +15,9 @@ export function splitter() {
 
 // Tip: je kunt de .repeat() methode gebruiken om een karakter een n aantal keer te herhalen... Dit heb je nog niet geleerd, maar bekijk hiervoor dit MDN-artikel eens: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/repeat
 // ==========================================
-let star='';
-for (let i = 0; i<5; i++){
-    star+='*';
+let star = '';
+for (let i = 0; i < 5; i++) {
+    star += '*';
     console.log(star);
 }
 

@@ -1,5 +1,7 @@
 import {splitter} from "./loops.js";
 
+console.log('=== O P D R A C H T   L O O P S - A N D - A R R A Y S . J S ===');
+splitter();
 // ==========================================
 // Opdracht 1. Bob staat erom bekend dat hij vaak vergaderingen mist, omdat hij zijn Outlook-agenda veel "gedoe" vindt.
 // Hij print alles liever uit. Schrijf een script dat onderstaande lijst met vergaderingen doorloopt en voor iedere
