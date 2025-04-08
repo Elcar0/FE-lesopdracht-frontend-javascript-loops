@@ -187,7 +187,7 @@ console.log(employees);
 for (let i = 0; i < employees.length; i++) {
     let email;
     email=`${employees[i].firstName}.${employees[i].lastName}@loop-it-solutions.nl`;
-    employees[i].email=email;
+    employees[i].email=email.toLowerCase();
 }
 
 console.log(employees);
@@ -198,4 +198,5 @@ splitter();
 // Kun je je script aanpassen om dit voor elkaar te krijgen? Dit heb je nog niet geleerd, maar Google is your best friend...
 // ==========================================
 
+// Dit kan gedaan worden door .toLowerCase() te gebruiken. Dit is gedaan bij employees[i].email=email.toLowerCase();
 
