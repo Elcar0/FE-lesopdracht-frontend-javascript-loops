@@ -77,6 +77,13 @@ const employeesInTraining = [
     {name: 'Otis', training: 'Teamworktraining', month: 'Februari'},
 ];
 
+for (let i = 0; i < employeesInTraining.length; i++) {
+    if (employeesInTraining[i].month === 'Januari') {
+        console.log(`${employeesInTraining[i].name}: ${employeesInTraining[i].training}`);
+    }
+}
+
+splitter();
 // ==========================================
 // Opdracht 4a. Medewerkers worden ieder jaar beoordeelt op hun functioneren. Het is aan Bob om de scores om te zetten
 // naar percentages en toe te voegen aan de adminstratie. Schrijf een script dat de score van iedere medewerker in de
@@ -103,6 +110,24 @@ const scores = [
     {name: 'Otis', score: 100, salaryIncrease: null},
 ];
 
+for (let i = 0; i < scores.length; i++) {
+    let score = scores[i].score;
+
+    if (score >= 60 && score < 70) {
+        scores[i].salaryIncrease = 2;
+    } else if (score >= 70 && score < 90) {
+        scores[i].salaryIncrease = 3;
+    } else if (score >= 90 && score < 100) {
+        scores[i].salaryIncrease = 4;
+    } else if (score === 100) {
+        scores[i].salaryIncrease = 6;
+    } else {
+        scores[i].salaryIncrease = 0;
+    }
+    console.log(`${scores[i].salaryIncrease}%`)
+}
+
+splitter();
 // ==========================================
 // Opdracht 4b. Breid je script uit door het percentage op te slaan in de 'salaryIncrease'-property van ieder object in de array.
 
