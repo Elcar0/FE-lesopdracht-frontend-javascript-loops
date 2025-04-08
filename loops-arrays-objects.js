@@ -1,6 +1,7 @@
 import {splitter} from "./loops.js";
 
 console.log('=== O P D R A C H T   L O O P S - A R R A Y S - O B J E C T S . J S ===');
+
 splitter();
 // ==========================================
 // Opdracht 1. Het sturen van salaris-mailtjes is voor Bob een tijdrovende klus. Bovendien typt hij met twee vingers,
@@ -110,8 +111,7 @@ const scores = [
     {name: 'Otis', score: 100, salaryIncrease: null},
 ];
 
-
-// Code voor opdracht 4a en 4b in een functie gezet omdat ze exact dezelfde code zouden gebruiken.
+// Code voor opdracht 4a en 4b in een functie gezet omdat ze exact dezelfde code gebruiken.
 function salaryRaise(score) {
     let salaryIncrease = 0;
 
@@ -186,10 +186,9 @@ console.log(employees);
 
 for (let i = 0; i < employees.length; i++) {
     let email;
-    email=`${employees[i].firstName}.${employees[i].lastName}@loop-it-solutions.nl`;
-    employees[i].email=email.toLowerCase();
+    email = `${employees[i].firstName}.${employees[i].lastName}@loop-it-solutions.nl`;
+    employees[i].email = email.toLowerCase();
 }
-
 console.log(employees);
 
 splitter();

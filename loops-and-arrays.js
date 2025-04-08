@@ -1,6 +1,7 @@
 import {splitter} from "./loops.js";
 
 console.log('=== O P D R A C H T   L O O P S - A N D - A R R A Y S . J S ===');
+
 splitter();
 // ==========================================
 // Opdracht 1. Bob staat erom bekend dat hij vaak vergaderingen mist, omdat hij zijn Outlook-agenda veel "gedoe" vindt.
@@ -19,6 +20,7 @@ const meetingTimes = ['09:00', '10:30', '14:00', '15:30', '17:00'];
 for (let i = 0; i < 5; i++) {
     console.log('Vergadering om ' + meetingTimes[i]);
 }
+
 splitter();
 // ==========================================
 // Opdracht 2. In tegenstelling tot Bob, werken de andere medewerkers van Loop-it Solutions wél hard.
@@ -95,8 +97,8 @@ splitter()
 
 const productionCodes = [" abC123  ", "  DEF456", "ghi789  ", "JKL012"];
 
-for (let i = 0; i<productionCodes.length; i++){
-    productionCodes[i]=productionCodes[i].trim().toUpperCase();
+for (let i = 0; i < productionCodes.length; i++) {
+    productionCodes[i] = productionCodes[i].trim().toUpperCase();
 }
 console.log(productionCodes);
 

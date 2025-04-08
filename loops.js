@@ -3,6 +3,7 @@ export function splitter() {
 }
 
 console.log('=== O P D R A C H T   L O O P S . J S ===');
+
 splitter();
 // ==========================================
 // Opdracht 1. Maak een for loop die het volgende patroon in de terminal print:
@@ -22,7 +23,6 @@ for (let i = 0; i < 5; i++) {
 }
 
 splitter();
-
 // ==========================================
 // Opdracht 2. Maak een for-loop die 4 keer het woord "loop..." logt, en bij de laatste (vijfde) loop het woord "klaar!"
 // Verwachte uitkomsten:
@@ -45,6 +45,7 @@ for (let i = 0; i < 4; i++) {
     console.log(loopText1);
 }
 console.log('klaar!');
+
 splitter();
 // ==========================================
 // Opdracht 3. Maak een for-loop die automatisch factuurnummers genereert in het formaat INV-0001, INV-0002, enzovoorts. Zorg ervoor dat je begint bij nummer 1 en dat de nummers oplopen. Er zijn in totaal 8 factuurnummers nodig.
@@ -63,6 +64,7 @@ splitter();
 for (let i = 0; i < 10; i++) {
     console.log("'INV-" + String(i + 1).padStart(4, '0') + "'");
 }
+
 splitter();
 // ==========================================
 // Opdracht 4. Schrijf een for-loop die van 9 tot en met 18 loopt en de uren logt.
@@ -100,6 +102,7 @@ for (let i = 9; i <= 18; i++) {
         console.log(time);
     }
 }
+
 splitter();
 // ==========================================
 // Opdracht 5. Maak een for-loop die van 0 tot 9 loopt en de getallen 0 tot 9 logt.
@@ -127,6 +130,7 @@ for (let i = 0; i <= 9; i++) {
     }
     console.log(pointers + i);
 }
+
 splitter();
 // ==========================================
 // Opdracht 6 (BONUS). Schrijf een for-loop die van 0 tot 100 loopt en de getallen print.
@@ -187,5 +191,6 @@ for (let i = 0; i < 100; i++) {
         console.log(text);
     }
 }
+
 splitter();
 
