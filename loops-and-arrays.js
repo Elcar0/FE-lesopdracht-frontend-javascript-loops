@@ -1,3 +1,5 @@
+import {splitter} from "./loops.js";
+
 // ==========================================
 // Opdracht 1. Bob staat erom bekend dat hij vaak vergaderingen mist, omdat hij zijn Outlook-agenda veel "gedoe" vindt.
 // Hij print alles liever uit. Schrijf een script dat onderstaande lijst met vergaderingen doorloopt en voor iedere
@@ -12,8 +14,10 @@
 // ==========================================
 
 const meetingTimes = ['09:00', '10:30', '14:00', '15:30', '17:00'];
-
-
+for (let i = 0; i < 5; i++) {
+    console.log('Vergadering om ' + meetingTimes[i]);
+}
+splitter();
 // ==========================================
 // Opdracht 2. In tegenstelling tot Bob, werken de andere medewerkers van Loop-it Solutions wél hard.
 // Alle medewerkers hebben daarom zojuist 5% salarisverhoging gekregen. Om te voorkomen dat Bob dit handmatig moet aanpassen,
@@ -27,7 +31,12 @@ const meetingTimes = ['09:00', '10:30', '14:00', '15:30', '17:00'];
 
 const salaries = [3200, 2350, 2800, 3500, 2800];
 
+for (let i = 0; i < salaries.length; i++) {
+    salaries[i] += (salaries[i] * 0.05);
+}
+console.log(salaries)
 
+splitter();
 // ==========================================
 // Opdracht 3. Eén van Bob's taken is medewerkers feliciteren met hun "zoveelste" verjaardag.
 // Daarvoor moet hij natuurlijk wel weten hoe oud iemand is geworden - en hoofdrekenen is niet zijn sterkste kant.
@@ -39,7 +48,12 @@ const salaries = [3200, 2350, 2800, 3500, 2800];
 
 const birthYears = [1995, 1997, 1990, 2003, 1982];
 
+for (let i = 0; i < birthYears.length; i++) {
+    birthYears[i] = new Date().getFullYear() - birthYears[i];
+}
+console.log(birthYears);
 
+splitter();
 // ==========================================
 // Opdracht 4. Bob houdt bij hoeveel verlofuren medewerkers per maand opnemen. Nu wil hij voor het nieuwe jaar een bonusstructuur toepassen:
 // - Even getallen (bijvoorbeeld 2, 4, 6 uur) worden vermenigvuldigd met 2, omdat medewerkers die hun verlof in nette blokken opnemen, worden beloond.
@@ -52,7 +66,17 @@ const birthYears = [1995, 1997, 1990, 2003, 1982];
 
 const leaveHours = [6, 9, 2, 7, 3];
 
+for (let i = 0; i < leaveHours.length; i++) {
+    if (leaveHours[i] % 2 === 0) {
+        leaveHours[i] *= 2;
+    } else {
+        leaveHours[i] /= 2;
+    }
+}
 
+console.log(leaveHours);
+
+splitter()
 // ==========================================
 // Opdracht 5 (BONUS). Na een dag bij Loop-it Solutions zit je er lekker in, tot je beseft dat één van de machines de
 // productiecodes verkeerd genereert en Bob deze altijd met de hand verbetert. Geen wonder dat er zo weinig werk verzet wordt...
@@ -69,4 +93,9 @@ const leaveHours = [6, 9, 2, 7, 3];
 
 const productionCodes = [" abC123  ", "  DEF456", "ghi789  ", "JKL012"];
 
+for (let i = 0; i<productionCodes.length; i++){
+    productionCodes[i]=productionCodes[i].trim().toUpperCase();
+}
+console.log(productionCodes);
 
+splitter();
