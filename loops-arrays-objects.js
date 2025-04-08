@@ -112,8 +112,8 @@ const scores = [
 
 
 // Code voor opdracht 4a en 4b in een functie gezet omdat ze exact dezelfde code zouden gebruiken.
-function salaryRaise(score){
-    let salaryIncrease=0;
+function salaryRaise(score) {
+    let salaryIncrease = 0;
 
     if (score >= 60 && score < 70) {
         salaryIncrease = 2;
@@ -152,7 +152,7 @@ splitter();
 console.log(scores);
 
 for (let i = 0; i < scores.length; i++) {
-    scores[i].salaryIncrease=`${salaryRaise(scores[i].score)}%`;
+    scores[i].salaryIncrease = `${salaryRaise(scores[i].score)}%`;
 }
 console.log(scores);
 
@@ -182,7 +182,17 @@ const employees = [
     {firstName: 'Otis', lastName: 'Kuiper'},
 ];
 
+console.log(employees);
 
+for (let i = 0; i < employees.length; i++) {
+    let email;
+    email=`${employees[i].firstName}.${employees[i].lastName}@loop-it-solutions.nl`;
+    employees[i].email=email;
+}
+
+console.log(employees);
+
+splitter();
 // ==========================================
 // Opdracht 6 (BONUS). Bob wil dat alle e-mailadressen in kleine letters worden opgeslagen, zodat ze consistent zijn.
 // Kun je je script aanpassen om dit voor elkaar te krijgen? Dit heb je nog niet geleerd, maar Google is your best friend...
